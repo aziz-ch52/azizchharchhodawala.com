@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aziz.data | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              navy: {
+                900: '#060a14',
+                800: '#0a101d',
+                700: '#111827',
+              },
+              brand: {
+                blue: '#0ea5e9',
+                light: '#38bdf8',
+                dark: '#0284c7',
+              },
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="antialiased min-h-screen bg-[#0b1121] overflow-x-hidden relative">
+    <!-- Background Glow Effect -->
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] opacity-20 pointer-events-none"
+      style="
+        background: radial-gradient(circle, rgba(14, 165, 233, 0.3) 0%, rgba(11, 17, 33, 0) 70%);
+      "></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-slate-800/50 bg-[#0b1121]/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex-shrink-0 flex items-center gap-1">
+            <span class="text-2xl font-bold text-white tracking-tight">AC</span>
+            <span class="text-2xl font-bold text-brand-blue">.data</span>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="#"
+                class="text-white hover:text-brand-light px-3 py-2 text-sm font-medium transition-colors"
+                >About</a
+              >
+              <a
+                href="#projects"
+                class="text-slate-400 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                >Projects</a
+              >
+              <a
+                href="#skills"
+                class="text-slate-400 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                >Skills</a
+              >
+              <a
+                href="#education"
+                class="text-slate-400 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                >Certifications</a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              href="mailto:aizchharchhoda52@gmail.com"
+              class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-light text-white px-5 py-2 rounded text-sm font-medium transition-all shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-32 pb-10 sm:pt-48 sm:pb-16 lg:pb-20 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+          <!-- Text Content -->
+          <div class="sm:text-center lg:col-span-6 lg:text-left z-10" data-reveal>
+            <h1 class="text-5xl tracking-tight font-bold text-white sm:text-6xl mb-2">Aziz</h1>
+            <h1 class="text-5xl tracking-tight font-bold text-brand-blue sm:text-6xl mb-6">
+              Chharchhodawala
+            </h1>
+
+            <h2
+              class="text-xl font-semibold text-brand-light mb-6 flex items-center justify-center lg:justify-start gap-2 flex-wrap"
+              style="color: #f9f6ee">
+              Data Analyst <span class="text-slate-600">|</span> SQL
+              <span class="text-slate-600">•</span> Excel
+              <span class="text-slate-600">•</span> Power BI
+              <span class="text-slate-600">•</span> Python
+            </h2>
+
+            <p
+              class="mt-3 text-base text-slate-400 sm:mt-5 sm:text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              I analyze simulated real-world data to generate clear, decision-ready insights through
+              project-based case studies focused on supply chain and revenue analysis.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row gap-4 sm:justify-center lg:justify-start items-center mb-8">
+              <a
+                href="#projects"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-400 text-white px-6 py-3 rounded text-sm font-semibold transition-all">
+                View Case Studies
+              </a>
+              <a
+                href="#"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent border border-slate-700 hover:border-slate-500 hover:bg-slate-800/50 text-white px-6 py-3 rounded text-sm font-semibold transition-all">
+                Download Resume
+              </a>
+            </div>
+
+            <!-- Custom Social Links -->
+            <div class="social-links">
+              <div class="social-item">
+                <a href="https://www.linkedin.com/in/aziz-chharchhodawala" target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <span class="social-tooltip">LinkedIn</span>
+              </div>
+              <div class="social-item">
+                <a href="https://github.com/aziz-ch52" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <span class="social-tooltip">GitHub</span>
+              </div>
+              <div class="social-item">
+                <a href="mailto:aizchharchhoda52@gmail.com"><i class="fas fa-envelope"></i></a>
+                <span class="social-tooltip">Email Me</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Dashboard Hero Graphic -->
+          <div
+            class="mt-16 lg:mt-0 lg:col-span-6 relative z-10"
+            style="perspective: 1000px"
+            data-reveal>
+            <!-- Main Dashboard Window (Tilt managed by @keyframes) -->
+            <div
+              class="relative mx-auto w-full max-w-[500px] bg-[#111827] rounded-xl border border-slate-700 shadow-[0_20px_50px_rgba(0,0,0,0.5)] floating-element">
+              <!-- Window Header -->
+              <div
+                class="flex items-center justify-between px-4 py-3 border-b border-slate-700/50 bg-[#0f172a] rounded-t-xl">
+                <div class="flex gap-1.5">
+                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="text-xs text-slate-400 font-mono flex items-center gap-2">
+                  Sales_Performance_Q4.sql
+                </div>
+                <div class="w-9"></div>
+              </div>
+
+              <!-- Dashboard Content -->
+              <div class="p-6">
+                <!-- Stats Row -->
+                <div class="flex justify-between items-start mb-8">
+                  <div>
+                    <div class="text-2xl font-bold text-white flex items-center gap-1">
+                      ~<span class="counter" data-target="500">0</span>K+
+                    </div>
+                    <div class="text-xs text-slate-500 mt-1">Rows Analyzed</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-white flex items-center gap-1">
+                      <span class="counter" data-target="5">0</span>+
+                    </div>
+                    <div class="text-xs text-slate-500 mt-1">End-to-end Case Studies</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-white">SQL/BI</div>
+                    <div class="text-xs text-slate-500 mt-1">Dashboards Built</div>
+                  </div>
+                </div>
+
+                <div class="text-center text-[10px] text-slate-600 italic mb-4">
+                  Across multiple simulated, real-world datasets
+                </div>
+
+                <!-- Animated Bar Chart -->
+                <div class="h-32 flex items-end justify-between gap-2 mt-4 px-2">
+                  <div
+                    class="w-full bg-blue-500 rounded-t-sm opacity-80 animate-bar"
+                    style="--target-height: 30%"></div>
+                  <div
+                    class="w-full bg-blue-400 rounded-t-sm opacity-90 animate-bar"
+                    style="--target-height: 50%; animation-delay: 0.1s"></div>
+                  <div
+                    class="w-full bg-brand-light rounded-t-sm animate-bar"
+                    style="--target-height: 80%; animation-delay: 0.2s"></div>
+                  <div
+                    class="w-full bg-blue-500 rounded-t-sm opacity-80 animate-bar"
+                    style="--target-height: 40%; animation-delay: 0.3s"></div>
+                  <div
+                    class="w-full bg-brand-light rounded-t-sm animate-bar"
+                    style="--target-height: 90%; animation-delay: 0.4s"></div>
+                  <div
+                    class="w-full bg-blue-400 rounded-t-sm opacity-90 animate-bar"
+                    style="--target-height: 60%; animation-delay: 0.5s"></div>
+                  <div
+                    class="w-full bg-blue-500 rounded-t-sm opacity-80 animate-bar"
+                    style="--target-height: 75%; animation-delay: 0.6s"></div>
+                </div>
+              </div>
+
+              <!-- Floating Icons anchored to dashboard -->
+              <div
+                class="absolute -top-6 -right-4 bg-[#1e293b] p-3 rounded-xl border border-slate-700 shadow-xl float-icon-1 z-20">
+                <i data-lucide="database" class="w-6 h-6 text-yellow-500"></i>
+              </div>
+
+              <div
+                class="absolute top-1/2 -right-8 bg-[#1e293b] p-3 rounded-xl border border-slate-700 shadow-xl float-icon-2 z-20">
+                <i data-lucide="pie-chart" class="w-6 h-6 text-yellow-400"></i>
+              </div>
+
+              <div
+                class="absolute -bottom-4 -left-6 bg-[#1e293b] p-3 rounded-xl border border-slate-700 shadow-xl float-icon-3 z-20">
+                <i data-lucide="file-code-2" class="w-6 h-6 text-brand-blue"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Why Hire Me -->
+    <section class="pt-10 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-white mb-10" data-reveal>Why Hire Me?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-reveal-group>
+        <div
+          class="glass-panel p-6 rounded-xl border border-slate-800 hover:border-brand-blue/50 transition-colors group"
+          data-reveal>
+          <div
+            class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center mb-6 border border-slate-700 group-hover:border-brand-blue transition-colors">
+            <i data-lucide="briefcase" class="w-6 h-6 text-brand-blue"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Business First</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            I start with the problem, align with business goals, and drive real impact.
+          </p>
+        </div>
+        <div
+          class="glass-panel p-6 rounded-xl border border-slate-800 hover:border-brand-blue/50 transition-colors group"
+          data-reveal>
+          <div
+            class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center mb-6 border border-slate-700 group-hover:border-brand-blue transition-colors">
+            <i data-lucide="settings" class="w-6 h-6 text-brand-blue"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Data Expert</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Skilled in SQL, Python, Excel & Power BI to extract, clean and analyze data.
+          </p>
+        </div>
+        <div
+          class="glass-panel p-6 rounded-xl border border-slate-800 hover:border-brand-blue/50 transition-colors group"
+          data-reveal>
+          <div
+            class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center mb-6 border border-slate-700 group-hover:border-brand-blue transition-colors">
+            <i data-lucide="lightbulb" class="w-6 h-6 text-brand-blue"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Insight Driven</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Convert complex data into clear insights and data stories.
+          </p>
+        </div>
+        <div
+          class="glass-panel p-6 rounded-xl border border-slate-800 hover:border-brand-blue/50 transition-colors group"
+          data-reveal>
+          <div
+            class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center mb-6 border border-slate-700 group-hover:border-brand-blue transition-colors">
+            <i data-lucide="check-circle" class="w-6 h-6 text-brand-blue"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Detail Oriented</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Ensure accuracy, quality and consistency in every analysis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics Process -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 relative" data-reveal>
+        <h2 class="text-2xl font-bold text-white inline-block bg-[#0b1121] px-4 relative z-10">
+          My Data Analytics Process
+        </h2>
+        <div class="absolute top-1/2 left-0 right-0 h-px bg-slate-800 -z-0"></div>
+      </div>
+
+      <div class="relative">
+        <div
+          class="hidden md:block absolute top-8 left-[5%] right-[5%] h-px border-t border-dashed border-brand-blue/50"></div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4" data-reveal-group>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="help-circle" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">1. Business Problem</h4>
+            <p class="text-[10px] text-slate-400">Understand objectives & define key metrics</p>
+          </div>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="database" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">2. Data Collection</h4>
+            <p class="text-[10px] text-slate-400">Gather data from multiple sources</p>
+          </div>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="brush" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">3. Data Cleaning</h4>
+            <p class="text-[10px] text-slate-400">Clean, validate & prepare high-quality data</p>
+          </div>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="search" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">4. Analysis</h4>
+            <p class="text-[10px] text-slate-400">Explore, analyze & find patterns</p>
+          </div>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="bar-chart" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">5. Visualization</h4>
+            <p class="text-[10px] text-slate-400">Create dashboards & visual reports</p>
+          </div>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="zap" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">6. Insights</h4>
+            <p class="text-[10px] text-slate-400">Derive actionable insights</p>
+          </div>
+          <div class="flex flex-col items-center text-center relative z-10" data-reveal>
+            <div
+              class="w-16 h-16 rounded-full glass-panel border border-brand-blue/30 flex items-center justify-center mb-4 glow-box bg-navy-900">
+              <i data-lucide="target" class="w-6 h-6 text-brand-blue"></i>
+            </div>
+            <h4 class="text-sm font-semibold text-brand-light mb-1">7. Impact</h4>
+            <p class="text-[10px] text-slate-400">Drive business decisions & measure results</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section id="projects" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-10" data-reveal>
+        <h2 class="text-3xl font-bold text-white">Featured Case Studies</h2>
+        <a
+          href="#"
+          class="text-brand-blue hover:text-brand-light text-sm font-medium flex items-center gap-1 transition-colors"
+          >View All Projects <i data-lucide="arrow-right" class="w-4 h-4"></i
+        ></a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-reveal-group>
+        <!-- Case Study 1 -->
+        <div
+          class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-brand-blue/50 transition-all group flex flex-col"
+          data-reveal>
+          <!-- Replace src below with your own image. object-fit: cover in .project-media
+               auto-crops/scales any image you upload to fill this box cleanly. -->
+          <div class="project-media">
+            <img
+              data-project-img
+              src="images/images (1).jpg"
+              alt="Revenue Retention Analysis project preview"
+              loading="lazy"
+              onerror="
+                this.closest('.project-media').classList.add('is-empty');
+                this.style.display = 'none';
+              " />
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <span
+              class="inline-block px-2 py-1 bg-brand-blue/10 text-brand-blue text-[10px] rounded mb-3 w-max uppercase font-bold tracking-wider"
+              >E-Commerce</span
+            >
+            <h3 class="text-xl font-bold text-white mb-2">Revenue Retention Analysis</h3>
+            <p class="text-sm text-slate-400 mb-6 flex-1">
+              Analyzed customer segments & retention patterns to improve LTV and reduce churn.
+            </p>
+            <div class="flex items-center justify-between mt-auto">
+              <div class="flex gap-2">
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >SQL</span
+                >
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >Python</span
+                >
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >Power BI</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-brand-blue hover:text-brand-light text-xs font-medium flex items-center gap-1"
+                >View <i data-lucide="arrow-right" class="w-3 h-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div
+          class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-brand-blue/50 transition-all group flex flex-col"
+          data-reveal>
+          <div class="project-media">
+            <img
+              data-project-img
+              src="images/images (2).jpg"
+              alt="Delivery Route Optimization project preview"
+              loading="lazy"
+              onerror="
+                this.closest('.project-media').classList.add('is-empty');
+                this.style.display = 'none';
+              " />
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <span
+              class="inline-block px-2 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] rounded mb-3 w-max uppercase font-bold tracking-wider"
+              >Logistics</span
+            >
+            <h3 class="text-xl font-bold text-white mb-2">Delivery Route Optimization</h3>
+            <p class="text-sm text-slate-400 mb-6 flex-1">
+              Optimized routes and reduced delivery time by 22% using data-driven insights.
+            </p>
+            <div class="flex items-center justify-between mt-auto">
+              <div class="flex gap-2">
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >SQL</span
+                >
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >Excel</span
+                >
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >Maps</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-brand-blue hover:text-brand-light text-xs font-medium flex items-center gap-1"
+                >View <i data-lucide="arrow-right" class="w-3 h-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div
+          class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-brand-blue/50 transition-all group flex flex-col"
+          data-reveal>
+          <div class="project-media">
+            <img
+              data-project-img
+              src="images/images.jpg"
+              alt="Ad Spend Efficiency Analysis project preview"
+              loading="lazy"
+              onerror="
+                this.closest('.project-media').classList.add('is-empty');
+                this.style.display = 'none';
+              " />
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <span
+              class="inline-block px-2 py-1 bg-purple-500/10 text-purple-400 text-[10px] rounded mb-3 w-max uppercase font-bold tracking-wider"
+              >Marketing</span
+            >
+            <h3 class="text-xl font-bold text-white mb-2">Ad Spend Efficiency Analysis</h3>
+            <p class="text-sm text-slate-400 mb-6 flex-1">
+              Reallocated budget across channels to improve ROAS by 27%.
+            </p>
+            <div class="flex items-center justify-between mt-auto">
+              <div class="flex gap-2">
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >SQL</span
+                >
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >Python</span
+                >
+                <span
+                  class="text-[10px] px-2 py-1 bg-navy-800 border border-slate-700 rounded text-slate-300"
+                  >Power BI</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-brand-blue hover:text-brand-light text-xs font-medium flex items-center gap-1"
+                >View <i data-lucide="arrow-right" class="w-3 h-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section
+      id="skills"
+      class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800/50">
+      <h2 class="text-3xl font-bold text-white mb-10" data-reveal>Skills & Tools</h2>
+
+      <div
+        class="flex flex-col lg:flex-row gap-10 lg:gap-0 lg:divide-x lg:divide-slate-800/80"
+        data-reveal>
+        <!-- Languages -->
+        <div class="flex-1 lg:pr-8">
+          <h3 class="flex items-center gap-2 text-white font-medium mb-6">
+            <i data-lucide="code" class="w-5 h-5 text-brand-blue"></i> Languages
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>SQL</span><span>90%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Python</span><span>85%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>R</span><span>60%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>DAX</span><span>60%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="flex-1 lg:px-8 pt-8 lg:pt-0 border-t border-slate-800/80 lg:border-t-0">
+          <h3 class="flex items-center gap-2 text-white font-medium mb-6">
+            <i data-lucide="database" class="w-5 h-5 text-brand-blue"></i> Databases
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>MySQL</span><span>90%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>PostgreSQL</span><span>85%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>SQLite</span><span>75%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>MongoDB</span><span>60%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visualization -->
+        <div class="flex-1 lg:px-8 pt-8 lg:pt-0 border-t border-slate-800/80 lg:border-t-0">
+          <h3 class="flex items-center gap-2 text-white font-medium mb-6">
+            <i data-lucide="pie-chart" class="w-5 h-5 text-brand-blue"></i> Visualization
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Power BI</span><span>90%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Excel</span><span>95%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Tableau</span><span>70%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Looker Studio</span><span>65%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="flex-1 lg:px-8 pt-8 lg:pt-0 border-t border-slate-800/80 lg:border-t-0">
+          <h3 class="flex items-center gap-2 text-white font-medium mb-6">
+            <i data-lucide="wrench" class="w-5 h-5 text-brand-blue"></i> Tools
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Git</span><span>85%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>VS Code</span><span>90%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Jupyter</span><span>85%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <span>Google Sheets</span><span>80%</span>
+              </div>
+              <div class="w-full bg-navy-800 rounded-full h-1.5">
+                <div class="bg-brand-blue h-1.5 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="flex-1 lg:pl-8 pt-8 lg:pt-0 border-t border-slate-800/80 lg:border-t-0">
+          <h3 class="flex items-center gap-2 text-white font-medium mb-6">
+            <i data-lucide="brain" class="w-5 h-5 text-brand-blue"></i> Concepts
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2 text-sm text-slate-400">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Data Cleaning
+            </li>
+            <li class="flex items-center gap-2 text-sm text-slate-400">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> EDA
+            </li>
+            <li class="flex items-center gap-2 text-sm text-slate-400">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Data Modeling
+            </li>
+            <li class="flex items-center gap-2 text-sm text-slate-400">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Statistics
+            </li>
+            <li class="flex items-center gap-2 text-sm text-slate-400">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Dashboard Design
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="py-20 bg-navy-800/20 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Educational Journey -->
+          <div data-reveal>
+            <h2 class="text-2xl font-bold text-white mb-8">My Educational Journey</h2>
+            <div class="relative border-l border-slate-700 ml-4 space-y-8 pb-4">
+              <div class="relative pl-8">
+                <div
+                  class="absolute -left-1.5 top-1 w-3 h-3 bg-brand-blue rounded-full glow-box"></div>
+                <div
+                  class="absolute -left-12 top-0 text-xs font-bold text-slate-300 text-right w-8">
+                  2024<br /><span class="text-[10px] text-slate-500 font-normal">Present</span>
+                </div>
+                <h4 class="text-white font-semibold flex items-center gap-2">
+                  BCA - Sigma University
+                </h4>
+                <p class="text-xs text-brand-blue mb-2">Vadodara, Gujarat</p>
+                <p class="text-sm text-slate-400">
+                  Building strong foundation in DBMS, Programming, Data Structures & Web
+                  Development.
+                </p>
+              </div>
+              <div class="relative pl-8">
+                <div class="absolute -left-1.5 top-1 w-3 h-3 bg-slate-600 rounded-full"></div>
+                <div
+                  class="absolute -left-12 top-0 text-xs font-bold text-slate-500 text-right w-8">
+                  2025
+                </div>
+                <h4 class="text-slate-300 font-semibold">Deepening Analytics Skills</h4>
+                <p class="text-sm text-slate-400 mt-2">
+                  Advanced SQL, Python, Power BI & Data Analysis. Building real-world projects &
+                  dashboards.
+                </p>
+              </div>
+              <div class="relative pl-8">
+                <div class="absolute -left-1.5 top-1 w-3 h-3 bg-slate-600 rounded-full"></div>
+                <div
+                  class="absolute -left-12 top-0 text-xs font-bold text-slate-500 text-right w-8">
+                  2026
+                </div>
+                <h4 class="text-slate-300 font-semibold">Data Engineering Path</h4>
+                <p class="text-sm text-slate-400 mt-2">
+                  Learning Data Engineering, ETL, Cloud & Big Data Technologies.
+                </p>
+              </div>
+              <div class="relative pl-8">
+                <div class="absolute -left-2 top-1 bg-navy-900 rounded-full p-0.5">
+                  <i data-lucide="rocket" class="w-4 h-4 text-brand-blue"></i>
+                </div>
+                <div
+                  class="absolute -left-12 top-0 text-xs font-bold text-slate-500 text-right w-8">
+                  2027
+                </div>
+                <h4 class="text-slate-300 font-semibold">Graduate & Beyond</h4>
+                <p class="text-sm text-slate-400 mt-2">
+                  Completing BCA and transitioning into a Data Engineer role.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div data-reveal>
+            <div class="flex justify-between items-end mb-8">
+              <h2 class="text-2xl font-bold text-white">Certifications</h2>
+              <a
+                href="#"
+                class="text-brand-blue hover:text-brand-light text-sm font-medium flex items-center gap-1 transition-colors"
+                >View All <i data-lucide="arrow-right" class="w-4 h-4"></i
+              ></a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div
+                class="glass-panel p-4 rounded-xl border border-slate-800 flex items-center gap-4 hover:border-brand-blue/50 transition-colors">
+                <div
+                  class="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
+                  <span class="font-bold text-xl text-blue-500">G</span>
+                </div>
+                <div>
+                  <h4 class="text-white text-sm font-bold">Google Data Analytics</h4>
+                  <p class="text-xs text-slate-400 mb-1">Coursera</p>
+                  <a href="#" class="text-[10px] text-brand-blue flex items-center gap-1"
+                    >Verify <i data-lucide="arrow-right" class="w-3 h-3"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="glass-panel p-4 rounded-xl border border-slate-800 flex items-center gap-4 hover:border-brand-blue/50 transition-colors">
+                <div
+                  class="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
+                  <span class="font-bold text-xl text-black">IBM</span>
+                </div>
+                <div>
+                  <h4 class="text-white text-sm font-bold">Data Analyst Professional</h4>
+                  <p class="text-xs text-slate-400 mb-1">IBM</p>
+                  <a href="#" class="text-[10px] text-brand-blue flex items-center gap-1"
+                    >Verify <i data-lucide="arrow-right" class="w-3 h-3"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="glass-panel p-4 rounded-xl border border-slate-800 flex items-center gap-4 hover:border-brand-blue/50 transition-colors">
+                <div
+                  class="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
+                  <div class="grid grid-cols-2 gap-0.5 w-6 h-6">
+                    <div class="bg-red-500"></div>
+                    <div class="bg-green-500"></div>
+                    <div class="bg-blue-500"></div>
+                    <div class="bg-yellow-500"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-white text-sm font-bold">Power BI Data Analyst</h4>
+                  <p class="text-xs text-slate-400 mb-1">Microsoft</p>
+                  <a href="#" class="text-[10px] text-brand-blue flex items-center gap-1"
+                    >Verify <i data-lucide="arrow-right" class="w-3 h-3"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="glass-panel p-4 rounded-xl border border-slate-800 flex items-center gap-4 hover:border-brand-blue/50 transition-colors">
+                <div
+                  class="w-12 h-12 bg-[#00EA64] rounded-full flex items-center justify-center shrink-0">
+                  <span class="font-bold text-xl text-black">H</span>
+                </div>
+                <div>
+                  <h4 class="text-white text-sm font-bold">SQL (Advanced)</h4>
+                  <p class="text-xs text-slate-400 mb-1">HackerRank</p>
+                  <a href="#" class="text-[10px] text-brand-blue flex items-center gap-1"
+                    >Verify <i data-lucide="arrow-right" class="w-3 h-3"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex justify-between items-center opacity-50 grayscale">
+              <span class="font-bold text-xl">coursera</span>
+              <span class="font-bold text-xl">IBM</span>
+              <span class="font-bold text-lg">Microsoft</span>
+              <span class="font-bold text-lg">HackerRank</span>
+              <span class="font-bold text-lg">datacamp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10" data-reveal-group>
+        <!-- Github Graph -->
+        <div class="glass-panel p-6 rounded-xl border border-slate-800" data-reveal>
+          <h2 class="text-xl font-bold text-white mb-6">GitHub Activity</h2>
+          <div class="overflow-x-auto pb-4">
+            <div class="flex gap-1 min-w-[600px] mb-2 text-[10px] text-slate-500">
+              <div class="w-8">Mon</div>
+              <div class="flex-1 flex justify-between">
+                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span
+                ><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span
+                ><span>Nov</span><span>Dec</span>
+              </div>
+            </div>
+            <div class="flex gap-1 min-w-[600px]" id="github-graph">
+              <!-- JS will populate this with squares -->
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4 gap-4 mt-6 pt-6 border-t border-slate-800 text-center">
+            <div>
+              <div class="text-xl font-bold text-white flex items-center justify-center gap-1">
+                <i data-lucide="bar-chart-2" class="w-4 h-4 text-emerald-500"></i> 103
+              </div>
+              <div class="text-[10px] text-slate-400">Contributions<br />This Year</div>
+            </div>
+            <div>
+              <div class="text-xl font-bold text-white flex items-center justify-center gap-1">
+                <i data-lucide="book-open" class="w-4 h-4 text-slate-400"></i> 24
+              </div>
+              <div class="text-[10px] text-slate-400">Repositories<br />Public</div>
+            </div>
+            <div>
+              <div class="text-xl font-bold text-white flex items-center justify-center gap-1">
+                <i data-lucide="code" class="w-4 h-4 text-slate-400"></i> 1.2k+
+              </div>
+              <div class="text-[10px] text-slate-400">Commits<br />All Time</div>
+            </div>
+            <div>
+              <div class="text-xl font-bold text-white flex items-center justify-center gap-1">
+                <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i> 5
+              </div>
+              <div class="text-[10px] text-slate-400">Pinned<br />Repositories</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pinned Repos -->
+        <div data-reveal>
+          <div class="flex justify-between items-end mb-6">
+            <h2 class="text-xl font-bold text-white">Pinned Repositories</h2>
+            <a
+              href="https://github.com/aziz-ch52"
+              target="_blank"
+              class="text-brand-blue hover:text-brand-light text-sm font-medium flex items-center gap-1 transition-colors"
+              >View GitHub Profile <i data-lucide="arrow-right" class="w-4 h-4"></i
+            ></a>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div
+              class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-slate-600 transition-colors">
+              <div class="flex items-start gap-2 mb-2">
+                <i data-lucide="book" class="w-4 h-4 text-slate-400 mt-1"></i>
+                <h4 class="text-brand-blue font-bold text-sm">data-analytics-portfolio</h4>
+              </div>
+              <p class="text-xs text-slate-400 mb-4 h-8 line-clamp-2">
+                My portfolio projects, dashboards & case studies.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400">
+                <span class="flex items-center gap-1"
+                  ><span class="w-2 h-2 rounded-full bg-blue-500"></span> Python</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="star" class="w-3 h-3"></i> 23</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="git-fork" class="w-3 h-3"></i> 7</span
+                >
+              </div>
+            </div>
+            <div
+              class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-slate-600 transition-colors">
+              <div class="flex items-start gap-2 mb-2">
+                <i data-lucide="book" class="w-4 h-4 text-slate-400 mt-1"></i>
+                <h4 class="text-brand-blue font-bold text-sm">sql-case-studies</h4>
+              </div>
+              <p class="text-xs text-slate-400 mb-4 h-8 line-clamp-2">
+                Collection of SQL case studies and queries.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400">
+                <span class="flex items-center gap-1"
+                  ><span class="w-2 h-2 rounded-full bg-orange-400"></span> SQL</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="star" class="w-3 h-3"></i> 18</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="git-fork" class="w-3 h-3"></i> 5</span
+                >
+              </div>
+            </div>
+            <div
+              class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-slate-600 transition-colors">
+              <div class="flex items-start gap-2 mb-2">
+                <i data-lucide="book" class="w-4 h-4 text-slate-400 mt-1"></i>
+                <h4 class="text-brand-blue font-bold text-sm">powerbi-dashboards</h4>
+              </div>
+              <p class="text-xs text-slate-400 mb-4 h-8 line-clamp-2">
+                Power BI dashboards for business insights.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400">
+                <span class="flex items-center gap-1"
+                  ><span class="w-2 h-2 rounded-full bg-yellow-500"></span> Power BI</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="star" class="w-3 h-3"></i> 31</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="git-fork" class="w-3 h-3"></i> 9</span
+                >
+              </div>
+            </div>
+            <div
+              class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-slate-600 transition-colors">
+              <div class="flex items-start gap-2 mb-2">
+                <i data-lucide="book" class="w-4 h-4 text-slate-400 mt-1"></i>
+                <h4 class="text-brand-blue font-bold text-sm">python-data-analysis</h4>
+              </div>
+              <p class="text-xs text-slate-400 mb-4 h-8 line-clamp-2">
+                Data analysis & visualization projects in Python.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400">
+                <span class="flex items-center gap-1"
+                  ><span class="w-2 h-2 rounded-full bg-blue-500"></span> Python</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="star" class="w-3 h-3"></i> 16</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i data-lucide="git-fork" class="w-3 h-3"></i> 4</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div
+        class="bg-navy-800 rounded-2xl p-8 md:p-12 border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden"
+        data-reveal>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-brand-blue/10 to-transparent opacity-50"></div>
+        <div class="relative z-10 text-center md:text-left">
+          <h2 class="text-3xl font-bold text-white mb-2">
+            Let's Build Data-Driven<br />Solutions Together!
+          </h2>
+          <p class="text-sm text-slate-400">
+            I'm open to internships, full-time opportunities and exciting projects.
+          </p>
+        </div>
+        <div class="relative z-10 flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+          <a
+            href="mailto:aizchharchhoda52@gmail.com"
+            class="inline-flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-light text-white px-8 py-3 rounded-lg font-semibold transition-all w-full sm:w-auto">
+            Hire Me <i data-lucide="send" class="w-4 h-4"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aziz-chharchhodawala"
+            target="_blank"
+            class="inline-flex items-center justify-center gap-2 bg-transparent border border-slate-600 hover:border-slate-400 text-white px-8 py-3 rounded-lg font-semibold transition-all w-full sm:w-auto">
+            Let's Connect <i class="fab fa-linkedin w-4 h-4 text-center"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#03060c] border-t border-slate-800 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-2xl font-bold text-white tracking-tight">Aziz</span>
+              <span class="text-2xl font-bold text-brand-blue">.data</span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Data Analyst passionate about transforming data into meaningful business impact.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-4 text-sm">Quick Links</h4>
+            <ul class="space-y-2 text-xs text-slate-400">
+              <li><a href="#" class="hover:text-brand-blue transition-colors">Home</a></li>
+              <li>
+                <a href="#projects" class="hover:text-brand-blue transition-colors">Projects</a>
+              </li>
+              <li>
+                <a href="#projects" class="hover:text-brand-blue transition-colors">Case Studies</a>
+              </li>
+              <li><a href="#skills" class="hover:text-brand-blue transition-colors">Skills</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-4 text-sm">Let's Connect</h4>
+            <ul class="space-y-3 text-xs text-slate-400">
+              <li class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4"></i> Vadodara, Gujarat, India
+              </li>
+              <li class="flex items-center gap-2">
+                <a
+                  href="mailto:aizchharchhoda52@gmail.com"
+                  class="hover:text-brand-blue flex items-center gap-2"
+                  ><i data-lucide="mail" class="w-4 h-4"></i> aizchharchhoda52@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <a
+                  href="https://www.linkedin.com/in/aziz-chharchhodawala"
+                  target="_blank"
+                  class="hover:text-brand-blue flex items-center gap-2"
+                  ><i class="fab fa-linkedin w-4 h-4 text-center"></i> LinkedIn Profile</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <a
+                  href="https://github.com/aziz-ch52"
+                  target="_blank"
+                  class="hover:text-brand-blue flex items-center gap-2"
+                  ><i class="fab fa-github w-4 h-4 text-center"></i> GitHub Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-4 text-sm">Stay Updated</h4>
+            <p class="text-xs text-slate-400 mb-3">Get insights and project updates</p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-navy-900 border border-slate-700 rounded-l px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-blue w-full" />
+              <button
+                class="bg-slate-800 border border-slate-700 border-l-0 rounded-r px-3 py-2 text-white hover:bg-slate-700 transition-colors">
+                <i data-lucide="send" class="w-3 h-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+          <p class="text-xs text-slate-500 text-center">Built By <b>Aziz Chharchhodawala</b></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

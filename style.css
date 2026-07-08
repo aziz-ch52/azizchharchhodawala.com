@@ -1,0 +1,365 @@
+ html {
+   scroll-behavior: smooth;
+ }
+
+ body {
+   background-color: #0b1121;
+   color: #94a3b8;
+ }
+
+ .glow-text {
+   text-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+ }
+
+ .glow-box {
+   box-shadow: 0 0 30px rgba(14, 165, 233, 0.1);
+ }
+
+ /* Custom Scrollbar */
+ ::-webkit-scrollbar {
+   width: 8px;
+ }
+
+ ::-webkit-scrollbar-track {
+   background: #060a14;
+ }
+
+ ::-webkit-scrollbar-thumb {
+   background: #1e293b;
+   border-radius: 4px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+   background: #334155;
+ }
+
+ .glass-panel {
+   background: rgba(15, 23, 42, 0.6);
+   backdrop-filter: blur(12px);
+   border: 1px solid rgba(51, 65, 85, 0.5);
+ }
+
+ /* ============================================
+         SCROLL REVEAL SYSTEM
+         Every element with [data-reveal] fades + rises
+         into place the first time it enters the viewport.
+         Respects prefers-reduced-motion.
+      ============================================ */
+ [data-reveal] {
+   opacity: 0;
+   transform: translateY(28px);
+   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+     transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+   will-change: opacity, transform;
+ }
+
+ [data-reveal].is-visible {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ /* Stagger children inside a [data-reveal-group] */
+ [data-reveal-group]>[data-reveal]:nth-child(1) {
+   transition-delay: 0ms;
+ }
+
+ [data-reveal-group]>[data-reveal]:nth-child(2) {
+   transition-delay: 90ms;
+ }
+
+ [data-reveal-group]>[data-reveal]:nth-child(3) {
+   transition-delay: 180ms;
+ }
+
+ [data-reveal-group]>[data-reveal]:nth-child(4) {
+   transition-delay: 270ms;
+ }
+
+ [data-reveal-group]>[data-reveal]:nth-child(5) {
+   transition-delay: 360ms;
+ }
+
+ [data-reveal-group]>[data-reveal]:nth-child(6) {
+   transition-delay: 450ms;
+ }
+
+ [data-reveal-group]>[data-reveal]:nth-child(7) {
+   transition-delay: 540ms;
+ }
+
+ @media (prefers-reduced-motion: reduce) {
+   [data-reveal] {
+     opacity: 1;
+     transform: none;
+     transition: none;
+   }
+
+   html {
+     scroll-behavior: auto;
+   }
+ }
+
+ /* Floating Dashboard Animation with 3D Tilt */
+ @keyframes float {
+   0% {
+     transform: translateY(0px) rotateY(-12deg) rotateX(4deg);
+   }
+
+   50% {
+     transform: translateY(-12px) rotateY(-10deg) rotateX(6deg);
+   }
+
+   100% {
+     transform: translateY(0px) rotateY(-12deg) rotateX(4deg);
+   }
+ }
+
+ .floating-element {
+   animation: float 6s ease-in-out infinite;
+   transform-style: preserve-3d;
+ }
+
+ /* Specific floating icons */
+ @keyframes float-icon-1 {
+   0% {
+     transform: translate(0, 0) translateZ(20px);
+   }
+
+   50% {
+     transform: translate(-5px, -10px) translateZ(30px);
+   }
+
+   100% {
+     transform: translate(0, 0) translateZ(20px);
+   }
+ }
+
+ .float-icon-1 {
+   animation: float-icon-1 4s ease-in-out infinite;
+ }
+
+ @keyframes float-icon-2 {
+   0% {
+     transform: translate(0, 0) translateZ(30px);
+   }
+
+   50% {
+     transform: translate(5px, 8px) translateZ(40px);
+   }
+
+   100% {
+     transform: translate(0, 0) translateZ(30px);
+   }
+ }
+
+ .float-icon-2 {
+   animation: float-icon-2 5s ease-in-out infinite;
+ }
+
+ @keyframes float-icon-3 {
+   0% {
+     transform: translate(0, 0) translateZ(25px);
+   }
+
+   50% {
+     transform: translate(-8px, 5px) translateZ(35px);
+   }
+
+   100% {
+     transform: translate(0, 0) translateZ(25px);
+   }
+ }
+
+ .float-icon-3 {
+   animation: float-icon-3 6s ease-in-out infinite;
+ }
+
+ /* Chart bar growing animation */
+ @keyframes growBar {
+   from {
+     height: 0;
+   }
+
+   to {
+     height: var(--target-height);
+   }
+ }
+
+ .animate-bar {
+   animation: growBar 1.5s ease-out forwards;
+ }
+
+ /* Custom Social Links CSS */
+ .social-links {
+   display: flex;
+   gap: 1.25rem;
+   align-items: center;
+   justify-content: center;
+ }
+
+ @media (min-width: 1024px) {
+   .social-links {
+     justify-content: flex-start;
+   }
+ }
+
+ .social-item {
+   position: relative;
+   display: inline-block;
+ }
+
+ .social-item a {
+   color: #94a3b8;
+   font-size: 1.25rem;
+   transition: color 0.3s ease;
+ }
+
+ .social-item a:hover {
+   color: #ffffff;
+ }
+
+ .social-tooltip {
+   visibility: hidden;
+   background-color: #1e293b;
+   color: #ffffff;
+   text-align: center;
+   border-radius: 4px;
+   padding: 4px 8px;
+   position: absolute;
+   z-index: 10;
+   bottom: 150%;
+   left: 50%;
+   transform: translateX(-50%);
+   opacity: 0;
+   transition: opacity 0.3s;
+   font-size: 0.75rem;
+   white-space: nowrap;
+   border: 1px solid rgba(51, 65, 85, 0.5);
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .social-tooltip::after {
+   content: '';
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: -4px;
+   border-width: 4px;
+   border-style: solid;
+   border-color: #1e293b transparent transparent transparent;
+ }
+
+ .social-item:hover .social-tooltip {
+   visibility: visible;
+   opacity: 1;
+ }
+
+ /* ============================================
+         CASE STUDY IMAGE SLOT
+         Drop any image into the <img data-project-img>
+         tag and it will auto-crop/scale to fill the
+         card header at a fixed 48-height ratio, no
+         matter the source image's own dimensions.
+      ============================================ */
+ .project-media {
+   position: relative;
+   height: 12rem;
+   /* matches old h-48 mock header */
+   width: 100%;
+   overflow: hidden;
+   background: #0a101d;
+ }
+
+ .project-media img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /* fills the box, crops overflow, never distorts */
+   object-position: center;
+   display: block;
+   transition: transform 0.5s ease;
+ }
+
+ .group:hover .project-media img {
+   transform: scale(1.05);
+ }
+
+ /* Fallback badge shown via ::after if the image 404s (empty alt fallback handled in JS) */
+ .project-media.is-empty::before {
+   content: 'Add project image';
+   position: absolute;
+   inset: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 0.7rem;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #475569;
+   border: 1px dashed #1e293b;
+ }
+
+ /* ============================================
+         RESPONSIVE MEDIA QUERIES
+         Tuned for a primarily laptop-first design,
+         with explicit breakpoints down to small phones.
+      ============================================ */
+
+ /* Large desktop / wide monitors */
+ @media (min-width: 1536px) {
+
+   main .max-w-7xl,
+   section .max-w-7xl {
+     max-width: 88rem;
+   }
+ }
+
+ /* Standard laptops (the primary target, ~1280-1440px) */
+ @media (min-width: 1024px) and (max-width: 1439px) {
+   h1.text-5xl {
+     font-size: 2.75rem;
+   }
+ }
+
+ /* Tablets landscape */
+ @media (max-width: 1023px) {
+   .floating-element {
+     animation-duration: 7s;
+   }
+ }
+
+ /* Tablets portrait / small laptops */
+ @media (max-width: 900px) {
+
+   h1.text-5xl,
+   h1.sm\:text-6xl {
+     font-size: 2.5rem;
+   }
+ }
+
+ /* Large phones */
+ @media (max-width: 640px) {
+   .floating-element {
+     transform: none !important;
+     animation: none !important;
+   }
+
+   h2.text-3xl {
+     font-size: 1.5rem;
+   }
+
+   .project-media {
+     height: 10rem;
+   }
+ }
+
+ /* Small phones */
+ @media (max-width: 380px) {
+   h1.text-5xl {
+     font-size: 2rem;
+   }
+
+   .glass-panel {
+     padding: 1rem !important;
+   }
+ }
