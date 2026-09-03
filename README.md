@@ -37,11 +37,3 @@ This portfolio serves as a central hub for my data analysis case studies. Unlike
    - **Marketing ROAS:** Ad spend efficiency analysis using Excel/DAX.
 4. **Technical Skills:** Categorized breakdown of my stack (SQL, Python, BI Tools).
 5. **Timeline:** Educational and professional history.
-
-## ⚙️ Setup & Usage
-
-Since this is a static site, no package installation or build process is required.
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/aziz-ch52/Portfolio-Website.git](https://github.com/aziz-ch52/Portfolio-Website.git)
