@@ -8,7 +8,7 @@ The site is built with performance and clean code in mind, utilizing **no extern
 
 This portfolio serves as a central hub for my data analysis case studies. Unlike generic templates, this site was built from scratch to reflect a "Business-First" mindset—prioritizing clarity, speed, and decision-ready insights.
 
-- **Live Demo:** https://aziz-ch52.github.io/Portfolio-Website/
+- **Live Demo:** https://aziz-ch52.github.io/azizchharchhodawala.com/
 - **Author:** Aziz Chharchhodawala
 
 ## ✨ Key Features
