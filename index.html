@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,16 +7,29 @@
     <meta
       name="description"
       content="Portfolio of Aziz Chharchhodawala, a data analyst specializing in Python, SQL and Power BI. Based in Vadodara, Gujarat, India." />
+    <meta name="theme-color" content="#050914" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Aziz Chharchhodawala | Data Analyst" />
     <meta
       property="og:description"
       content="Python, SQL and Power BI projects, internships and certifications." />
     <link rel="canonical" href="https://aziz-ch52.github.io/azizchharchhodawala.com/" />
+
+    <!-- Always open in dark theme (runs before the page paints, so there is no flash) -->
+    <script>
+      document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -29,27 +42,36 @@
       </div>
     </div>
 
+    <div id="prog"></div>
+
     <!-- ============ NAVIGATION ============ -->
-    <nav id="nav">
-      <div class="wrap">
-        <a href="#home" class="brand"
-          ><span class="mark mono" aria-hidden="true">AC</span><span>Aziz Chharchhodawala</span></a
-        >
-        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-          Menu
-        </button>
-        <div class="links" id="links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#certs">Certifications</a>
-          <a href="#contact">Contact</a>
-          <a class="btn c" href="assets/resume/Aziz_Chharchhodawala_Resume.pdf" download>Resume</a>
-        </div>
-      </div>
-    </nav>
+   <nav id="nav">
+  <div class="wrap">
+    <a href="#home" class="brand"><span class="mark mono" aria-hidden="true">AC</span><span>Aziz Chharchhodawala</span></a>
+
+    <div class="links" id="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+      <a class="btn c" href="assets/resume/Aziz_Chharchhodawala_Resume.pdf" download>Resume</a>
+    </div>
+
+    <div class="nav-tools">
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Toggle light / dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+          <path d="M9 18h6"/>
+          <path d="M10 22h4"/>
+        </svg>
+      </button>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</nav>
 
     <!-- ============ HERO ============ -->
     <header class="hero" id="home">
@@ -807,6 +829,13 @@
 </div>
 
 <br>
+  </a>
+
+</div>
+    </div>
+  </section>
+
+    <!-- ============ FOOTER ============ -->
 
     <!-- ============ FOOTER ============ -->
     <footer style="border-top: 1px solid #e5e7eb; padding: 24px 16px; text-align: center; width: 100%; box-sizing: border-box;">

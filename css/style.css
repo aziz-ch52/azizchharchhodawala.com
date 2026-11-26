@@ -1298,3 +1298,174 @@ footer .wrap {
     transform: none
   }
 }
+
+/* ===================== THEME TOGGLE + LIGHT MODE ===================== */
+html {
+  color-scheme: dark
+}
+
+/* bulb button */
+.nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .04);
+  color: var(--mute);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: color .25s, border-color .25s, background .25s, transform .25s
+}
+
+.theme-btn:hover {
+  border-color: var(--cy);
+  color: var(--cy);
+  transform: rotate(-8deg)
+}
+
+.theme-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: fill .3s, filter .3s
+}
+
+/* smooth colour change while switching */
+html.theme-anim,
+html.theme-anim * {
+  transition: background-color .35s, color .35s, border-color .35s !important
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+  html.theme-anim,
+  html.theme-anim * {
+    transition: none !important
+  }
+}
+
+/* light palette */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f8fc;
+  --bg2: #eef2f9;
+  --card: #ffffff;
+  --line: #d5deee;
+  --text: #0f1a33;
+  --mute: #53627f;
+  --cy: #0e7490;
+  --vi: #6d5de8;
+}
+
+/* bulb turns "on" in light mode */
+[data-theme="light"] .theme-btn {
+  color: #b45309;
+  background: #fff
+}
+
+[data-theme="light"] .theme-btn svg {
+  fill: #facc15;
+  stroke: #b45309;
+  filter: drop-shadow(0 0 6px rgba(250, 204, 21, .75))
+}
+
+/* nav */
+[data-theme="light"] nav.sc {
+  background: rgba(246, 248, 252, .85)
+}
+
+@media (max-width:960px) {
+  [data-theme="light"] .links {
+    background: rgba(246, 248, 252, .98)
+  }
+}
+
+/* buttons */
+[data-theme="light"] .w {
+  background: #0f1a33;
+  color: #fff
+}
+
+[data-theme="light"] .c,
+[data-theme="light"] .links .btn {
+  color: #fff
+}
+
+[data-theme="light"] .g {
+  background: rgba(15, 26, 51, .03)
+}
+
+/* hero */
+[data-theme="light"] .hero {
+  background: radial-gradient(900px 500px at 78% 30%, rgba(109, 93, 232, .14), transparent 70%), radial-gradient(600px 400px at 10% 90%, rgba(14, 116, 144, .10), transparent 70%)
+}
+
+[data-theme="light"] .hero-media {
+  background: linear-gradient(160deg, #fff, #eef2f9)
+}
+
+[data-theme="light"] .key {
+  background: linear-gradient(#fff, #eef2f9);
+  color: var(--text)
+}
+
+/* surfaces */
+[data-theme="light"] .panel {
+  background: linear-gradient(160deg, #fff, #f1f5fb);
+  box-shadow: 0 8px 30px rgba(15, 26, 51, .06)
+}
+
+[data-theme="light"] .brand .mark,
+[data-theme="light"] .chip,
+[data-theme="light"] .pp,
+[data-theme="light"] .l4-ico {
+  background: #fff
+}
+
+[data-theme="light"] .pp-ico,
+[data-theme="light"] .thumb,
+[data-theme="light"] .aph {
+  background: #eaf0f9
+}
+
+[data-theme="light"] .ph {
+  background: repeating-linear-gradient(135deg, #eaf0f9, #eaf0f9 12px, #e1e9f5 12px, #e1e9f5 24px)
+}
+
+[data-theme="light"] .zoom {
+  background: rgba(255, 255, 255, .92)
+}
+
+[data-theme="light"] .fab {
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 6px 20px rgba(15, 26, 51, .12)
+}
+
+/* icon hover states (cyan background needs white icon) */
+[data-theme="light"] .pp:hover .pp-ico,
+[data-theme="light"] .links4 a:hover .l4-ico {
+  color: #fff
+}
+
+/* lightbox stays dark in both themes, so keep its controls light */
+[data-theme="light"] .lbx,
+[data-theme="light"] .lbn {
+  color: #e8eefc
+}
+
+[data-theme="light"] .lb .cap,
+[data-theme="light"] .lb .miss {
+  color: #9aa7c7
+}
